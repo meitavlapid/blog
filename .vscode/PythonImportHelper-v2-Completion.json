@@ -932,7 +932,7 @@
         "kind": 5,
         "importPath": "blog.settings",
         "description": "blog.settings",
-        "peekOfCode": "CORS_ALLOW_ALL = True\nCORS_ALLOWED_ORIGINS = [\n    \"https://example.com\",\n    \"https://sub.example.com\",\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:9000\",\n    \"http://127.0.0.1:3000\",\n    \"http://127.0.0.1:5173\",\n    \"http://localhost:3000\",\n    \"http://192.168.55.154:3000\"",
+        "peekOfCode": "CORS_ALLOW_ALL = True\nCORS_ALLOWED_ORIGINS = [\n    \"https://example.com\",\n    \"https://sub.example.com\",\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:9000\",\n    \"http://127.0.0.1:3000\",\n    \"http://127.0.0.1:5173\",\n    \"http://localhost:3000\",\n    \"http://192.168.55.154:3000\",",
         "detail": "blog.settings",
         "documentation": {}
     },
@@ -941,7 +941,7 @@
         "kind": 5,
         "importPath": "blog.settings",
         "description": "blog.settings",
-        "peekOfCode": "CORS_ALLOWED_ORIGINS = [\n    \"https://example.com\",\n    \"https://sub.example.com\",\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:9000\",\n    \"http://127.0.0.1:3000\",\n    \"http://127.0.0.1:5173\",\n    \"http://localhost:3000\",\n    \"http://192.168.55.154:3000\"\n]",
+        "peekOfCode": "CORS_ALLOWED_ORIGINS = [\n    \"https://example.com\",\n    \"https://sub.example.com\",\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:9000\",\n    \"http://127.0.0.1:3000\",\n    \"http://127.0.0.1:5173\",\n    \"http://localhost:3000\",\n    \"http://192.168.55.154:3000\",\n    \"https://your-frontend.onrender.com\",",
         "detail": "blog.settings",
         "documentation": {}
     },

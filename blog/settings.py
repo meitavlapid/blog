@@ -75,7 +75,9 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000",
     "http://127.0.0.1:5173",
     "http://localhost:3000",
-    "http://192.168.55.154:3000"
+    "http://192.168.55.154:3000",
+    "https://your-frontend.onrender.com",
+
 ]
 
 TEMPLATES = [
