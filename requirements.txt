@@ -1,0 +1,10 @@
+Django>=5.0
+djangorestframework
+djangorestframework-simplejwt
+python-dotenv
+django-cors-headers
+django-filter
+psycopg2
+Pillow
+django-taggit
+gunicorn
