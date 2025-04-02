@@ -851,7 +851,7 @@
         "kind": 5,
         "importPath": "blog.settings",
         "description": "blog.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\nload_dotenv(os.path.join(BASE_DIR, \".env\"))\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\nSECRET_KEY = os.getenv(\"SECRET_KEY\")\nDEBUG = os.getenv(\"DEBUG\", \"False\").lower() == \"true\"\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\nload_dotenv(os.path.join(BASE_DIR, \".env\"))\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\nSECRET_KEY = os.getenv(\"SECRET_KEY\")\nDEBUG = os.getenv(\"DEBUG\", \"False\").lower() == \"true\"\nALLOWED_HOSTS = os.getenv(\"ALLOWED_HOSTS\", \"localhost\").split(\",\")\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',",
         "detail": "blog.settings",
         "documentation": {}
     },
@@ -860,7 +860,7 @@
         "kind": 5,
         "importPath": "blog.settings",
         "description": "blog.settings",
-        "peekOfCode": "SECRET_KEY = os.getenv(\"SECRET_KEY\")\nDEBUG = os.getenv(\"DEBUG\", \"False\").lower() == \"true\"\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "peekOfCode": "SECRET_KEY = os.getenv(\"SECRET_KEY\")\nDEBUG = os.getenv(\"DEBUG\", \"False\").lower() == \"true\"\nALLOWED_HOSTS = os.getenv(\"ALLOWED_HOSTS\", \"localhost\").split(\",\")\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
         "detail": "blog.settings",
         "documentation": {}
     },
@@ -869,7 +869,7 @@
         "kind": 5,
         "importPath": "blog.settings",
         "description": "blog.settings",
-        "peekOfCode": "DEBUG = os.getenv(\"DEBUG\", \"False\").lower() == \"true\"\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "DEBUG = os.getenv(\"DEBUG\", \"False\").lower() == \"true\"\nALLOWED_HOSTS = os.getenv(\"ALLOWED_HOSTS\", \"localhost\").split(\",\")\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
         "detail": "blog.settings",
         "documentation": {}
     },
@@ -878,7 +878,7 @@
         "kind": 5,
         "importPath": "blog.settings",
         "description": "blog.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
+        "peekOfCode": "ALLOWED_HOSTS = os.getenv(\"ALLOWED_HOSTS\", \"localhost\").split(\",\")\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
         "detail": "blog.settings",
         "documentation": {}
     },
