@@ -975,7 +975,7 @@
         "kind": 5,
         "importPath": "blog.settings",
         "description": "blog.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'blog.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': os.getenv(\"DB_NAME\"),\n        'USER': os.getenv(\"DB_USER\"),\n        'PASSWORD': os.getenv(\"DB_PASSWORD\"),\n        'HOST': 'localhost',",
+        "peekOfCode": "WSGI_APPLICATION = 'blog.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': os.getenv(\"DB_NAME\"),\n        'USER': os.getenv(\"DB_USER\"),\n        'PASSWORD': os.getenv(\"DB_PASSWORD\"),\n        'HOST': os.getenv(\"DB_HOST\"),",
         "detail": "blog.settings",
         "documentation": {}
     },
@@ -984,7 +984,7 @@
         "kind": 5,
         "importPath": "blog.settings",
         "description": "blog.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': os.getenv(\"DB_NAME\"),\n        'USER': os.getenv(\"DB_USER\"),\n        'PASSWORD': os.getenv(\"DB_PASSWORD\"),\n        'HOST': 'localhost',\n        'PORT': '5432',\n    }\n}",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': os.getenv(\"DB_NAME\"),\n        'USER': os.getenv(\"DB_USER\"),\n        'PASSWORD': os.getenv(\"DB_PASSWORD\"),\n        'HOST': os.getenv(\"DB_HOST\"),\n        'PORT': os.getenv(\"DB_PORT\", '5432'),\n    }\n}",
         "detail": "blog.settings",
         "documentation": {}
     },
