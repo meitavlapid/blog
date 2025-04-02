@@ -193,7 +193,63 @@
         "documentation": {}
     },
     {
-        "label": "TokenObtainPairView",
+        "label": "CustomTokenObtainPairView",
+        "importPath": "blog_pro.views",
+        "description": "blog_pro.views",
+        "isExtraImport": true,
+        "detail": "blog_pro.views",
+        "documentation": {}
+    },
+    {
+        "label": "AuthViewSet",
+        "importPath": "blog_pro.views",
+        "description": "blog_pro.views",
+        "isExtraImport": true,
+        "detail": "blog_pro.views",
+        "documentation": {}
+    },
+    {
+        "label": "UsersViewSet",
+        "importPath": "blog_pro.views",
+        "description": "blog_pro.views",
+        "isExtraImport": true,
+        "detail": "blog_pro.views",
+        "documentation": {}
+    },
+    {
+        "label": "PostViewSet",
+        "importPath": "blog_pro.views",
+        "description": "blog_pro.views",
+        "isExtraImport": true,
+        "detail": "blog_pro.views",
+        "documentation": {}
+    },
+    {
+        "label": "CommentsViewSet",
+        "importPath": "blog_pro.views",
+        "description": "blog_pro.views",
+        "isExtraImport": true,
+        "detail": "blog_pro.views",
+        "documentation": {}
+    },
+    {
+        "label": "UserProfileViewSet",
+        "importPath": "blog_pro.views",
+        "description": "blog_pro.views",
+        "isExtraImport": true,
+        "detail": "blog_pro.views",
+        "documentation": {}
+    },
+    {
+        "label": "LikesViewSet",
+        "importPath": "blog_pro.views",
+        "description": "blog_pro.views",
+        "isExtraImport": true,
+        "detail": "blog_pro.views",
+        "documentation": {}
+    },
+    {
+        "label": "TokenRefreshView",
         "importPath": "rest_framework_simplejwt.views",
         "description": "rest_framework_simplejwt.views",
         "isExtraImport": true,
@@ -201,7 +257,7 @@
         "documentation": {}
     },
     {
-        "label": "TokenRefreshView",
+        "label": "TokenObtainPairView",
         "importPath": "rest_framework_simplejwt.views",
         "description": "rest_framework_simplejwt.views",
         "isExtraImport": true,
@@ -524,54 +580,6 @@
         "documentation": {}
     },
     {
-        "label": "AuthViewSet",
-        "importPath": "blog_pro.views",
-        "description": "blog_pro.views",
-        "isExtraImport": true,
-        "detail": "blog_pro.views",
-        "documentation": {}
-    },
-    {
-        "label": "UsersViewSet",
-        "importPath": "blog_pro.views",
-        "description": "blog_pro.views",
-        "isExtraImport": true,
-        "detail": "blog_pro.views",
-        "documentation": {}
-    },
-    {
-        "label": "PostViewSet",
-        "importPath": "blog_pro.views",
-        "description": "blog_pro.views",
-        "isExtraImport": true,
-        "detail": "blog_pro.views",
-        "documentation": {}
-    },
-    {
-        "label": "CommentsViewSet",
-        "importPath": "blog_pro.views",
-        "description": "blog_pro.views",
-        "isExtraImport": true,
-        "detail": "blog_pro.views",
-        "documentation": {}
-    },
-    {
-        "label": "UserProfileViewSet",
-        "importPath": "blog_pro.views",
-        "description": "blog_pro.views",
-        "isExtraImport": true,
-        "detail": "blog_pro.views",
-        "documentation": {}
-    },
-    {
-        "label": "LikesViewSet",
-        "importPath": "blog_pro.views",
-        "description": "blog_pro.views",
-        "isExtraImport": true,
-        "detail": "blog_pro.views",
-        "documentation": {}
-    },
-    {
         "label": "get_tokens_for_user",
         "importPath": "core.authentication",
         "description": "core.authentication",
@@ -796,6 +804,22 @@
         "documentation": {}
     },
     {
+        "label": "BlogTokenObtainPairSerializer",
+        "importPath": "blog_pro.serializers",
+        "description": "blog_pro.serializers",
+        "isExtraImport": true,
+        "detail": "blog_pro.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "BlogTokenObtainPairSerializer",
+        "importPath": "blog_pro.serializers",
+        "description": "blog_pro.serializers",
+        "isExtraImport": true,
+        "detail": "blog_pro.serializers",
+        "documentation": {}
+    },
+    {
         "label": "logging",
         "kind": 6,
         "isExtraImport": true,
@@ -810,14 +834,6 @@
         "description": "rest_framework_simplejwt.tokens",
         "isExtraImport": true,
         "detail": "rest_framework_simplejwt.tokens",
-        "documentation": {}
-    },
-    {
-        "label": "BlogTokenObtainPairSerializer",
-        "importPath": "blog_pro.serializers",
-        "description": "blog_pro.serializers",
-        "isExtraImport": true,
-        "detail": "blog_pro.serializers",
         "documentation": {}
     },
     {
@@ -1067,7 +1083,7 @@
         "kind": 5,
         "importPath": "blog.urls",
         "description": "blog.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/v1/', include('blog_pro.urls')),\n    path('api/v1/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),\n    path('api/v1/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),\n]\n# https://docs.djangoproject.com/en/5.1/howto/static-files/#serving-static-files-during-development\nurlpatterns += static(\n    settings.MEDIA_URL,\n    document_root=settings.MEDIA_ROOT",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/v1/', include('blog_pro.urls')),\n    path('api/v1/token/', CustomTokenObtainPairView.as_view(),\n         name='token_obtain_pair'),\n    path('api/v1/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),\n]\n# https://docs.djangoproject.com/en/5.1/howto/static-files/#serving-static-files-during-development\nurlpatterns += static(\n    settings.MEDIA_URL,",
         "detail": "blog.urls",
         "documentation": {}
     },
@@ -1360,6 +1376,15 @@
         "documentation": {}
     },
     {
+        "label": "CustomTokenObtainPairView",
+        "kind": 6,
+        "importPath": "blog_pro.views",
+        "description": "blog_pro.views",
+        "peekOfCode": "class CustomTokenObtainPairView(TokenObtainPairView):\n    serializer_class = BlogTokenObtainPairSerializer\nclass AuthViewSet(ViewSet):\n    queryset = User.objects.all()\n    serializer_class = UserSerializer\n    permission_classes = [AllowAny]\n    @action(detail=False, methods=['post'], permission_classes=[AllowAny])\n    def login(self, request):\n        logging.debug(\"This is a debug message\")\n        serializer = AuthTokenSerializer(",
+        "detail": "blog_pro.views",
+        "documentation": {}
+    },
+    {
         "label": "AuthViewSet",
         "kind": 6,
         "importPath": "blog_pro.views",
@@ -1418,7 +1443,7 @@
         "kind": 2,
         "importPath": "blog_pro.views",
         "description": "blog_pro.views",
-        "peekOfCode": "def current_user(request):\n    if not request.user.is_authenticated:\n        return Response({\"error\": \"User is not authenticated\"}, status=403)\n    return Response({\"user\": request.user.username, \"id\": request.user.id})\nclass AuthViewSet(ViewSet):\n    queryset = User.objects.all()\n    serializer_class = UserSerializer\n    permission_classes = [AllowAny]\n    @action(detail=False, methods=['post'], permission_classes=[AllowAny])\n    def login(self, request):",
+        "peekOfCode": "def current_user(request):\n    if not request.user.is_authenticated:\n        return Response({\"error\": \"User is not authenticated\"}, status=403)\n    return Response({\"user\": request.user.username, \"id\": request.user.id})\nclass CustomTokenObtainPairView(TokenObtainPairView):\n    serializer_class = BlogTokenObtainPairSerializer\nclass AuthViewSet(ViewSet):\n    queryset = User.objects.all()\n    serializer_class = UserSerializer\n    permission_classes = [AllowAny]",
         "detail": "blog_pro.views",
         "documentation": {}
     },

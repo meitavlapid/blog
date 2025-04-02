@@ -23,7 +23,8 @@ from blog_pro.throttling import (
 )
 from rest_framework.filters import OrderingFilter, SearchFilter
 from django_filters.rest_framework import DjangoFilterBackend
-
+from rest_framework_simplejwt.views import TokenObtainPairView
+from blog_pro.serializers import BlogTokenObtainPairSerializer
 import logging
 
 logging.basicConfig(level=logging.INFO)
@@ -37,6 +38,9 @@ def current_user(request):
 
     return Response({"user": request.user.username, "id": request.user.id})
 
+
+class CustomTokenObtainPairView(TokenObtainPairView):
+    serializer_class = BlogTokenObtainPairSerializer
 
 class AuthViewSet(ViewSet):
     queryset = User.objects.all()
